@@ -1,0 +1,567 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'lulo';
+}
+
+input {
+  font-family: 'lulo'
+}
+
+@font-face {
+    font-family: Lulo;
+    src: url(../fonts/Lulo_Clean_One_Bold.otf);
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2.5vh;
+  z-index: 10;
+}
+
+.headerLogo {
+  height: 5.6rem;
+  width: 6.5rem;
+}
+
+.headerLogo img {
+  height: 100%;
+  width: 100%;
+}
+
+.headerTitle {
+  font-size: 4rem;
+}
+
+.gold {
+  color: #CCA151;
+}
+
+.burgerMenu {
+  position: relative;
+  height: 2.2rem;
+  width: 3.1rem;
+}
+
+.userImg {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.loginOverlay {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -35rem;
+  height: 35rem;
+  width: 30rem;
+  background: #FFFFFF;
+  border: 1px solid #212121;
+}
+.visible {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.loginContainer {
+  margin: 4rem 2rem;
+}
+
+.loginEmailInput, .loginPasswordInput {
+  padding: 2rem;
+  background: none;
+  border: 1px solid #212121;
+}
+
+.loginContainer2 {
+  margin: 4rem 10rem;
+}
+
+.subscribe {
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer
+}
+
+.helloworld {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.loginSubmitBtn {
+  padding: 1rem 3rem;
+  background: #CCA151;
+}
+
+
+.burgerMenuTop, .burgerMenuMid, .burgerMenuBottom {
+  position: absolute;
+  background: #000;
+  height: 0.1rem;
+}
+
+.burgerMenuTop {
+  top: 0;
+  right: 0;
+  width: 1.6rem;
+}
+.burgerMenuMid {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.burgerMenuBottom {
+  bottom: 0;
+  width: 1.6rem;
+}
+
+.section-1 {
+  position: relative;
+  height: 75vh;
+  padding-top: 25vh;
+}
+
+.videoContainer {
+  position: relative;
+  height: 55vh;
+  width: 80%;
+  margin: 0 auto;
+  background: #707070;
+}
+
+.discover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.2rem 2rem;
+  border: 2px solid #fff;
+  z-index: 5;
+}
+
+.scrollBtn {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: #CCA151;
+  cursor: pointer;
+}
+
+
+/* NAVIGATION */
+
+.navMenu {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  height: 40vh;
+  width: 9%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.navList {
+  font-size: 1rem;
+  text-align: right;
+  padding-right: 3.5rem;
+  padding-left: 2rem;
+
+}
+
+.navItem:first-child {
+  margin-top: 2rem;
+}
+
+.navItem {
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  color: #CCA151;
+}
+
+.navDots {
+  margin-left: -2rem;
+}
+
+.navDotsItem:first-child{
+  margin-top: 1.7rem;
+}
+
+.navDotsItem {
+  margin-bottom: 0.2rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.navLineItem {
+  margin-bottom: 0.2rem;
+  margin-left: 0.7rem;
+  height: 3.1rem;
+  width: .2rem;
+  background: #CCA151;
+}
+
+.dot-isActive {
+  background: #CCA151;
+  border-color: #CCA151;
+}
+
+
+/* --- SECTION 2  ---- */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 10vh;
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.center {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.btn {
+  text-align: center;
+  padding-bottom: 10vh;
+}
+
+.btn-link {
+  position: relative;
+  font-size: 1.8rem;
+  padding: 2rem 5rem;
+  border: 2px solid #000;
+  color: #212121;
+  background: #FAFAFF;
+  z-index: 10;
+}
+
+.decoration {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.decorationline {
+  position: absolute;
+  height: 0.5rem;
+  width: 5rem;
+  background: rgba(204,161,81,0.6);
+  transform: skewY(40deg);
+}
+
+.decorationline:nth-child(1) {
+  top: 20%;
+  left: 9%;
+}
+.decorationline:nth-child(2) {
+  top: 20%;
+  right: 40%;
+}
+.decorationline:nth-child(3) {
+  bottom: 37%;
+  left: 29%;
+}
+.decorationline:nth-child(4) {
+  bottom: 37%;
+  right: 20%;
+}
+
+
+/* ------ SECTION 3 ------ */
+
+
+.inline-flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.parts {
+  display: flex;
+  align-items: center;
+}
+
+.partsText {
+  margin-left: -9rem;
+  font-size: 1.8rem;
+}
+
+.partsImg-size {
+  height: 29.8rem;
+  width: 29.8rem;
+}
+
+.partsImg {
+  height: 100%;
+  width: 100%;
+}
+
+.diamonds {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 15rem;
+  margin-top: 10rem;
+}
+
+.decorationDiamond {
+  height: 22rem;
+  width: 22rem;
+  border: 2px solid rgba(204,161,81,0.6);
+  transform: rotate(45deg);
+  margin-top: 16%;
+}
+
+
+
+/* ------ SECTION 4 ------- */
+
+.contactForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 4rem;
+}
+
+.contactText {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.input {
+  background: none;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 1rem;
+}
+
+.inputTop {
+  padding: 1.2rem 0rem 1.2rem 2rem;
+  margin-right: .7rem;
+}
+
+.inputBottom {
+  padding: 0.8rem 26rem 24rem 1.2rem;
+  margin-top: 2rem
+}
+
+.inputBtnContainer {
+  padding: 0 16rem;
+}
+
+.inputBtn {
+  margin-top: 2rem;
+  background: none;
+  padding: 1.5rem 6rem;
+  border: 1px solid #CCA151;
+  color: #CCA151;
+  font-family: 'lulo';
+}
+
+.footerColor {
+    background: #212121;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.footerLogoSize {
+  height: 5.6rem;
+  width: 6.7rem;
+}
+
+.footerLogoImg {
+  height: 100%;
+  width: 100%;
+}
+
+.footerLogoTitle {
+  color: #FAFAFF;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.footerJoinUs {
+  font-size: .7rem;
+}
+
+.footerJoinTitle {
+  margin-bottom: 1rem;
+}
+
+.footerInput {
+  border: 1px solid;
+  border-radius: 5rem;
+  background: #FAFAFF;
+  padding: .5rem 1rem .5rem 1rem;
+  margin-left: -1rem;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerIcon {
+  background: #FAFAFF;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: .5rem .7rem;
+  margin-top: 2rem;
+}
+
+.footerFindUs {
+  font-size: 1rem;
+}
+
+.footerFindTitle {
+  margin-bottom: .8rem;
+}
+
+.footerFindText {
+  color: #FAFAFF;
+  margin-bottom: .8rem;
+}
+
+
+.footerUnitySize {
+  height: 8rem;
+  width: 18.5rem;
+}
+
+.UnityImgFooter {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* ------- PAGE UNITY ----- */
+
+
+.howItWorks {
+  width: 20%;
+  margin-left: 15%;
+  border-left: 1px solid #212121;
+  margin: 0 auto;
+}
+
+
+.unityBox {
+  display: flex;
+}
+
+.greyBox {
+  height: 60%;
+  width: 60%;
+  background: #212121;
+}
+
+.mouseAndText, .mouseAndTextBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.mouseImgSize {
+  height: 4.8rem;
+  width: 3rem;
+  margin-left: 3rem;
+}
+
+.mouseImgSize2 {
+  height: 4.8rem;
+  width: 8.5rem;
+}
+
+.mouseImg {
+  height: 100%;
+  width: 100%;
+}
+
+.mouseText {
+  font-size: 1.2rem;
+  margin-left: 5rem;
+}
+
+.mouseText2 {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.mouseAndTextBottom {
+  margin-top: 6rem;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+.priceBtnContainer {
+  margin-top: 1rem;
+}
+.priceBtn {
+  padding: 1rem 3rem;
+  background: none;
+  border: 1px solid #212121;
+}
